@@ -1,0 +1,22 @@
+sudo -i -u postgres
+
+Create new User: 
+
+createuser --interactive
+
+When prompted for role name, enter linux username, and select Yes to superuser question.
+Still logged in as postgres user, create a database: 
+
+createdb <username_from_step_3>
+
+Confirm error(s) are gone by entering: psql at the command prompt.
+Output should show psql (x.x.x) Type "help" for help.
+
+
+\q.
+
+
+\c test_db;
+
+
+sudo -u postgres psql
